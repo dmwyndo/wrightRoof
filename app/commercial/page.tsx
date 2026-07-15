@@ -7,15 +7,15 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Commercial Roofing",
   description:
-    "Commercial roof installation, replacement, and maintenance across Texas — TPO, PVC, flat and sloped systems for offices, retail, warehouses, and more.",
+    "Commercial roof installation, replacement, and maintenance — flat and sloped systems for offices, retail, warehouses, and more. Wright Roofing, Inc.",
 };
 
 const offerings = [
   "Flat and sloped commercial roof installations",
-  "Durable, energy-efficient materials like TPO and PVC",
-  "Silicone coatings",
+  "Low-slope and flat roofing with high-performance materials",
   "Roof replacement or retrofitting to meet updated codes",
   "Maintenance plans to extend lifespan and minimize downtime",
+  "Metal roofing systems built for performance and curb appeal",
 ] as const;
 
 export default function CommercialPage() {
@@ -25,14 +25,14 @@ export default function CommercialPage() {
         <div className="page-hero-img">
           <Image
             src="/commercial/hero.jpg"
-            alt="Aerial view of commercial buildings with flat white roofs and surrounding parking"
+            alt="Commercial roofing project by Wright Roofing"
             fill
             priority
             sizes="100vw"
           />
         </div>
         <div className="wrap page-hero-inner">
-          <p className="eyebrow page-hero-eyebrow">Serving the whole state of Texas</p>
+          <p className="eyebrow page-hero-eyebrow">Idaho Falls · Wichita</p>
           <h1 className="display page-hero-title">Commercial Work</h1>
         </div>
       </section>
@@ -46,8 +46,8 @@ export default function CommercialPage() {
               large warehouses.
             </h2>
             <p>
-              Based in Dallas–Fort Worth, we take on commercial projects across
-              Texas.
+              Based in Idaho Falls and Wichita, Wright Roofing handles every kind
+              of commercial roofing need for businesses and property managers.
             </p>
           </Reveal>
 

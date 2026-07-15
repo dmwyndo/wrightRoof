@@ -20,7 +20,7 @@ export function Header() {
     <header className={scrolled ? "scrolled" : undefined}>
       <div className="wrap nav">
         <Link className="brand" href="/" aria-label={`${site.name} — Home`}>
-          <Logo />
+          <Logo variant={scrolled ? "light" : "dark"} />
         </Link>
         <nav className="nav-links" aria-label="Primary">
           <Link href="/commercial">Commercial</Link>

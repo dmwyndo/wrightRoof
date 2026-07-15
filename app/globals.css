@@ -1,13 +1,27 @@
 :root {
-  --ink: #111214;
-  --ink-soft: #1b1d20;
-  --paper: #fbfaf8;
-  --stone: #8b8b86;
-  --line: rgba(17, 18, 20, 0.14);
-  --line-dark: rgba(251, 250, 248, 0.18);
-  --accent: #7db2e5;
+  --white: #ffffff;
+  --ink: #191f21;
+  --ink-soft: #40424d;
+  --paper: #ffffff;
+  --cloud: #edeff7;
+  --smoke: #d3d6e0;
+  --steel: #bcbfcc;
+  --space: #9da2b3;
+  --graphite: #6e7180;
+  --phantom: #1e1e24;
+  --stone: #6e7180;
+  --line: rgba(25, 31, 33, 0.12);
+  --line-dark: rgba(255, 255, 255, 0.16);
+  --accent: #57a2ce;
   --max: 1240px;
   --pad: clamp(20px, 4vw, 56px);
+
+  --text-h1: clamp(40px, 6vw, 64px);
+  --text-h2: clamp(32px, 4.5vw, 48px);
+  --text-sub1: clamp(24px, 3vw, 32px);
+  --text-sub2: clamp(20px, 2.2vw, 24px);
+  --text-body: 18px;
+  --text-body-sm: 16px;
 }
 
 * {
@@ -22,11 +36,11 @@ html {
 }
 
 body {
-  font-family: var(--font-geist), "Geist", sans-serif;
-  font-weight: 500;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 400;
   background: var(--paper);
   color: var(--ink);
-  font-size: 17px;
+  font-size: var(--text-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,12 +64,10 @@ a {
 
 /* ---------- type ---------- */
 .display {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
-  font-variation-settings: "wdth" 120;
-  font-weight: 640;
-  line-height: 0.96;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 .eyebrow {
@@ -63,8 +75,8 @@ a {
   align-items: center;
   gap: 12px;
   font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.22em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--stone);
 }
@@ -74,29 +86,27 @@ a {
 }
 
 .tie {
-  width: 11px;
-  height: auto;
+  width: auto;
+  height: 16px;
   display: block;
-  aspect-ratio: 39 / 111;
-}
-
-.tie path {
-  fill: var(--accent);
+  flex: none;
+  color: var(--accent);
+  overflow: visible;
 }
 
 .why-item .tie {
-  width: auto;
   height: 18px;
   margin-top: 4px;
 }
 
 .closing .tie {
   margin: 0 auto 26px;
-  width: 18px;
+  height: 22px;
+  width: auto;
 }
 
 h2.display {
-  font-size: clamp(34px, 5vw, 60px);
+  font-size: var(--text-h2);
 }
 
 /* ---------- buttons ---------- */
@@ -171,7 +181,7 @@ body > header {
 }
 
 body > header.scrolled {
-  background: rgba(251, 250, 248, 0.94);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   border-color: var(--line);
 }
@@ -195,17 +205,17 @@ body > header.scrolled .nav .phone {
 .brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   color: inherit;
+  overflow: visible;
 }
 
 .brand-logo {
   display: block;
-  height: 36px;
+  height: 34px;
   width: auto;
-}
-
-.brand-logo path {
-  fill: currentColor;
+  flex-shrink: 0;
+  overflow: visible;
 }
 
 .nav-links {
@@ -278,6 +288,16 @@ body > header.scrolled .nav .phone {
   color: #fff;
 }
 
+.nav-social .social-link--instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+}
+
+.nav-social .social-link--linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+
 .nav-social .social-link--google {
   background: #fff;
   box-shadow: inset 0 0 0 1px rgba(17, 18, 20, 0.08);
@@ -288,7 +308,9 @@ body > header.scrolled .nav .phone {
   height: 18px;
 }
 
-.nav-social .social-link--facebook svg {
+.nav-social .social-link--facebook svg,
+.nav-social .social-link--instagram svg,
+.nav-social .social-link--linkedin svg {
   fill: currentColor;
 }
 
@@ -324,12 +346,11 @@ body > header.scrolled .nav .phone {
 .hero-img {
   position: absolute;
   inset: 0;
-}
-
-.hero-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  z-index: 0;
+  background-image: url("/wright/hero.jpg");
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
 }
 
 .hero-img::after {
@@ -338,9 +359,9 @@ body > header.scrolled .nav .phone {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10, 10, 12, 0.88) 0%,
-    rgba(10, 10, 12, 0.35) 45%,
-    rgba(10, 10, 12, 0.25) 100%
+    rgba(10, 10, 12, 0.82) 0%,
+    rgba(10, 10, 12, 0.28) 45%,
+    rgba(10, 10, 12, 0.12) 100%
   );
 }
 
@@ -370,7 +391,7 @@ body > header.scrolled .nav .phone {
 }
 
 .hero h1 {
-  font-size: clamp(56px, 9vw, 128px);
+  font-size: var(--text-h1);
   margin-bottom: 0;
   max-width: none;
 }
@@ -610,9 +631,8 @@ section {
 }
 
 .stat .num {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
-  font-variation-settings: "wdth" 125;
-  font-weight: 680;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(110px, 14vw, 190px);
   line-height: 0.85;
   letter-spacing: -0.02em;
@@ -632,10 +652,10 @@ section {
 }
 
 .intro-copy h2 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: clamp(28px, 3.4vw, 44px);
   line-height: 1.14;
-  font-weight: 560;
+  font-weight: 600;
   letter-spacing: -0.01em;
   margin-bottom: 26px;
 }
@@ -708,10 +728,10 @@ section {
 }
 
 .commercial-lead h2 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: clamp(28px, 3.6vw, 44px);
   line-height: 1.14;
-  font-weight: 560;
+  font-weight: 600;
   letter-spacing: -0.01em;
   margin-bottom: 22px;
 }
@@ -722,10 +742,10 @@ section {
 }
 
 .commercial-block h3 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: clamp(22px, 2.4vw, 28px);
   line-height: 1.2;
-  font-weight: 560;
+  font-weight: 600;
   letter-spacing: -0.01em;
   margin-bottom: 18px;
 }
@@ -986,6 +1006,16 @@ section {
   color: #fff;
 }
 
+.trust-social-links .social-link--instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+}
+
+.trust-social-links .social-link--linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+
 .trust-social-links .social-link--google {
   background: #fff;
   box-shadow: inset 0 0 0 1px rgba(17, 18, 20, 0.1);
@@ -996,7 +1026,9 @@ section {
   height: 16px;
 }
 
-.trust-social-links .social-link--facebook svg {
+.trust-social-links .social-link--facebook svg,
+.trust-social-links .social-link--instagram svg,
+.trust-social-links .social-link--linkedin svg {
   fill: currentColor;
 }
 
@@ -1044,7 +1076,7 @@ section {
 }
 
 .why-item h3 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: clamp(20px, 2.2vw, 27px);
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -1100,7 +1132,7 @@ section {
   grid-column: span 5;
 }
 
-.svc.storm {
+.svc.repairs {
   grid-column: span 12;
   min-height: 380px;
 }
@@ -1147,10 +1179,8 @@ section {
 }
 
 .svc-body h3 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
-  font-variation-settings: "wdth" 118;
-  font-weight: 640;
-  text-transform: uppercase;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 700;
   font-size: clamp(24px, 2.6vw, 34px);
   letter-spacing: -0.005em;
   margin-bottom: 10px;
@@ -1195,9 +1225,8 @@ section {
 }
 
 .step .n {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
-  font-variation-settings: "wdth" 125;
-  font-weight: 680;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 800;
   font-size: 15px;
   letter-spacing: 0.1em;
   color: var(--accent);
@@ -1205,10 +1234,8 @@ section {
 }
 
 .step h3 {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
-  font-variation-settings: "wdth" 116;
-  text-transform: uppercase;
-  font-weight: 640;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
+  font-weight: 700;
   font-size: clamp(20px, 1.9vw, 25px);
   margin: 34px 0 10px;
 }
@@ -1274,9 +1301,9 @@ section {
 }
 
 .google-reviews-title {
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: clamp(34px, 4.5vw, 52px);
-  font-weight: 640;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -1358,7 +1385,7 @@ section {
   position: absolute;
   top: 18px;
   right: 22px;
-  font-family: var(--font-archivo), "Archivo", sans-serif;
+  font-family: var(--font-neulis), "Neulis Sans", sans-serif;
   font-size: 42px;
   line-height: 1;
   color: #b8b9bc;
@@ -1563,7 +1590,7 @@ footer {
 }
 
 .foot-brand .brand-logo {
-  height: 40px;
+  height: 38px;
 }
 
 .foot-social {
@@ -1599,6 +1626,16 @@ footer {
   color: #fff;
 }
 
+.foot-social .social-link--instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+}
+
+.foot-social .social-link--linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+
 .foot-social .social-link--google {
   background: #fff;
 }
@@ -1608,7 +1645,9 @@ footer {
   height: 16px;
 }
 
-.foot-social .social-link--facebook svg {
+.foot-social .social-link--facebook svg,
+.foot-social .social-link--instagram svg,
+.foot-social .social-link--linkedin svg {
   fill: currentColor;
 }
 

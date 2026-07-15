@@ -37,10 +37,32 @@ export function SocialLinks({ className }: SocialLinksProps) {
         href={site.links.facebook}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Black Tie Roofing on Facebook"
+        aria-label="Wright Roofing on Facebook"
       >
         <svg viewBox="0 0 24 24" aria-hidden>
           <path d="M13.5 22v-8.2h2.75l.42-3.18H13.5V9.02c0-.92.26-1.55 1.58-1.55h1.7V4.36c-.29-.04-1.3-.13-2.47-.13-2.45 0-4.13 1.49-4.13 4.22V10.6H7.5v3.18h2.68V22h3.32z" />
+        </svg>
+      </a>
+      <a
+        className="social-link social-link--instagram"
+        href={site.links.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Wright Roofing on Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm6.25-2.75a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z" />
+        </svg>
+      </a>
+      <a
+        className="social-link social-link--linkedin"
+        href={site.links.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Wright Roofing on LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden>
+          <path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 8.98h3.96V21H3V8.98zm7.04 0H14v1.64h.05c.55-1.04 1.9-2.14 3.91-2.14 4.18 0 4.95 2.75 4.95 6.33V21h-3.96v-5.56c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94V21H10V8.98z" />
         </svg>
       </a>
       <a
@@ -48,7 +70,7 @@ export function SocialLinks({ className }: SocialLinksProps) {
         href={site.links.google}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Black Tie Roofing on Google Maps"
+        aria-label="Wright Roofing on Google Maps"
       >
         <GoogleIcon />
       </a>

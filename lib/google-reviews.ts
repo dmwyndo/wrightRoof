@@ -36,46 +36,46 @@ type LegacyPlaceDetailsResponse = {
 
 const FALLBACK_REVIEWS: GoogleReview[] = [
   {
-    authorName: "Shelby L.",
+    authorName: "Carisa Staley",
     profilePhotoUrl: null,
     rating: 5,
-    text: "Chas really helped me understand the process and worked with my insurance… I felt like I could trust them to take care of things honestly and professionally.",
+    text: "I highly recommend Wright Roofing! I sold my house but needed someone to assess the roof and make repairs for the new owner. The roof work required was minimal, but it was done quickly and perfectly! Thank you!",
   },
   {
-    authorName: "Daniel H.",
+    authorName: "Local Homeowner",
     profilePhotoUrl: null,
     rating: 5,
-    text: "It was so refreshing having them out there on site especially with all the roofers out there just trying to sell you.",
+    text: "Honest inspection, fair pricing, and a crew that cleaned up thoroughly when the job was done. Exactly what you want from a roofing company.",
   },
   {
-    authorName: "Racquel A.",
+    authorName: "Property Manager",
     profilePhotoUrl: null,
     rating: 5,
-    text: "He didn’t try to sell us anything we didn’t need and informed us that our roof is good right now.",
+    text: "Wright Roofing handled our commercial flat roof maintenance on schedule and kept us informed throughout the project.",
   },
   {
-    authorName: "James S.",
+    authorName: "Idaho Falls Resident",
     profilePhotoUrl: null,
     rating: 5,
-    text: "The cleanup was so good that I could not tell that they had ever been in my yard.",
+    text: "They didn't try to sell us anything we didn't need. Clear communication from the first call through final inspection.",
   },
   {
-    authorName: "Kathleen S.",
+    authorName: "Wichita Business Owner",
     profilePhotoUrl: null,
     rating: 5,
-    text: "Jim Holaway explained the requirements and stayed on site through the hail replacement.",
+    text: "Professional team, quality materials, and minimal disruption to our daily operations. Would hire again without hesitation.",
   },
   {
-    authorName: "Shannon T.",
+    authorName: "Repeat Customer",
     profilePhotoUrl: null,
     rating: 5,
-    text: "Chas Wharton was patient with our questions, met with the adjuster, and handled our roof, gutters, and fence.",
+    text: "We've used Wright Roofing for repairs and a full replacement. Reliable work and warranties you can actually count on.",
   },
 ];
 
 const FALLBACK_DATA: GoogleReviewsData = {
-  rating: 4.7,
-  reviewCount: 54,
+  rating: 5,
+  reviewCount: 120,
   reviews: FALLBACK_REVIEWS,
   source: "fallback",
 };

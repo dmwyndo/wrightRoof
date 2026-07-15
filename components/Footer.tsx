@@ -14,7 +14,7 @@ export function Footer() {
               href="/"
               aria-label={`${site.name} — Home`}
             >
-              <Logo />
+              <Logo variant="dark" />
             </Link>
             <SocialLinks className="foot-social" />
           </div>
@@ -24,9 +24,9 @@ export function Footer() {
             <a href={site.phoneHref}>{site.phone}</a>
           </div>
           <div className="foot-meta">
-            Residential · Commercial · Storm response
+            Residential · Commercial · Repairs
             <br />
-            Free on-site estimates
+            Free roof inspections
           </div>
         </div>
         <div className="foot-legal">

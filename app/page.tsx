@@ -8,20 +8,20 @@ import { site } from "@/lib/site";
 
 const whyItems = [
   {
-    title: "Honest assessments",
-    body: "We tell you what you need — and what you don’t. If your roof is fine, we’ll say so.",
+    title: "Local & family-owned",
+    body: "For more than 60 years, Wright Roofing has been a trusted name for homeowners and businesses across the region.",
   },
   {
-    title: "Insurance advocacy",
-    body: "Hail and storm claims are part of our everyday work. We meet with adjusters, document the scope, and help you get covered for what’s actually damaged.",
+    title: "Licensed, insured & bonded",
+    body: "Your property is protected with fully licensed crews and the coverage you expect from a professional roofing team.",
   },
   {
-    title: "Clean installs",
-    body: "Quality materials, careful crews, and a cleanup so thorough neighbors ask if anyone was even there.",
+    title: "Transparent estimates",
+    body: "No-pressure inspections and clear pricing — we tell you what you need and what you don’t.",
   },
   {
-    title: "Local teams",
-    body: "Owned by Kyler Ellison and Curry Austin, headquartered in Fort Worth.",
+    title: "Reliable communication",
+    body: "Responsive crews, strong warranties up to 25 years, and dependable follow-through from start to finish.",
   },
 ] as const;
 
@@ -29,29 +29,26 @@ const services = [
   {
     key: "res",
     tag: "Residential",
-    title: "Your home, handled",
-    body: "New roofs, replacements, emergency repairs, gutters, and exterior touch-ups after storms.",
-    image:
-      "https://images.unsplash.com/photo-1744975748338-d226c7535d49?auto=format&fit=crop&w=1600&q=80",
-    alt: "Residential rooftops with shingle and tile roofs under a clear blue sky",
+    title: "Residential projects",
+    body: "From shingle replacements to complete roof installations, we provide expert craftsmanship, honest pricing, and roofing solutions that last for decades.",
+    image: "/wright/residential.jpg",
+    alt: "Completed residential roofing project by Wright Roofing",
   },
   {
     key: "com",
     tag: "Commercial",
-    title: "Built for business",
-    body: "TPO, PVC, modified bitumen, metal, and more for retail, multifamily, medical, schools, and industrial properties.",
-    image:
-      "https://images.unsplash.com/photo-1679382915249-489422f49eb3?auto=format&fit=crop&w=1200&q=80",
-    alt: "Standing seam metal roof against a blue sky",
+    title: "Commercial work",
+    body: "Performance, durability, and code compliance for offices, retail, warehouses, and property managers — from small buildings to large commercial sites.",
+    image: "/wright/commercial.jpg",
+    alt: "Commercial flat roof installation by Wright Roofing",
   },
   {
-    key: "storm",
-    tag: "Storm response",
-    title: "When the weather hits",
-    body: "Leak stops, shingle replacement, and full restorations when North Texas weather hits.",
-    image:
-      "https://images.unsplash.com/photo-1634853982486-c06f0e17940f?auto=format&fit=crop&w=2000&q=80",
-    alt: "Rain pouring onto a wet asphalt shingle roof",
+    key: "repairs",
+    tag: "Repairs & maintenance",
+    title: "Repairs & maintenance",
+    body: "Whether it’s a small leak or major damage, our expert team quickly diagnoses and fixes the problem — saving you stress, time, and money.",
+    image: "/wright/repairs.jpg",
+    alt: "Roof repair and maintenance work by Wright Roofing",
   },
 ] as const;
 
@@ -59,22 +56,22 @@ const steps = [
   {
     n: "01",
     title: "Inspect",
-    body: "Free on-site assessment of your roof and related exterior damage.",
+    body: "Free, honest roof inspections to catch issues early — whether you're selling, buying, or protecting your property.",
   },
   {
     n: "02",
     title: "Plan",
-    body: "Clear scope, product options, and insurance coordination when needed.",
+    body: "Clear scope, material options, and transparent pricing with no pressure.",
   },
   {
     n: "03",
     title: "Install",
-    body: "Professional crews, quality materials, and on-site oversight.",
+    body: "Professional crews using quality materials — residential, commercial, flat, and metal systems.",
   },
   {
     n: "04",
     title: "Finish",
-    body: "Thorough cleanup and warranty-backed workmanship.",
+    body: "Thorough cleanup and warranty-backed workmanship you can count on.",
   },
 ] as const;
 
@@ -82,41 +79,37 @@ export default function HomePage() {
   return (
     <main id="top">
       <section className="hero">
-        <div className="hero-img">
-          <Image
-            src="https://images.unsplash.com/photo-1566071634551-224a639a1c7d?auto=format&fit=crop&w=2200&q=80"
-            alt="A residential home with a dark asphalt shingle roof"
-            fill
-            priority
-            sizes="100vw"
-          />
-        </div>
+        <div
+          className="hero-img"
+          role="img"
+          aria-label="Wright Roofing professional installing a standing seam metal roof"
+        />
         <p className="hero-brandline">
-          White-glove roofing · Est. experience 28 yrs
+          Trusted roofing · 60+ years strong
         </p>
         <div className="wrap hero-inner">
           <div className="hero-top">
             <p className="eyebrow">{site.areas}</p>
             <h1 className="display">
-              <span className="hero-title-line">Roofing</span>{" "}
+              <span className="hero-title-line">One call gets</span>{" "}
               <br className="hero-title-break" aria-hidden />
               <span className="hero-title-phrase">
-                done right<span className="dot">.</span>
+                it Wright<span className="dot">.</span>
               </span>
             </h1>
           </div>
           <div className="hero-bottom">
             <p>
-              From the first inspection to the final cleanup, we handle your roof
-              — and your insurance claim — with the care your home or business
-              deserves.
+              Expert residential and commercial roofing — from quick repairs to
+              full replacements — with the honest pricing and quality workmanship
+              your home or business deserves.
             </p>
             <aside className="hero-trust" aria-label="Our promise">
               <p>{site.trustCopy}</p>
             </aside>
             <div className="hero-ctas">
               <Link className="btn on-dark solid" href="#contact">
-                Get a free inspection
+                Get a free roof inspection
               </Link>
               <a className="btn on-dark ghost" href={site.phoneHref}>
                 Call {site.phone}
@@ -130,21 +123,20 @@ export default function HomePage() {
         <div className="wrap intro-grid">
           <Reveal className="stat">
             <div className="num">
-              12<span>+</span>
+              60<span>+</span>
             </div>
-            <div className="label">Years on Texas roofs</div>
+            <div className="label">Years of local trust</div>
           </Reveal>
           <Reveal className="intro-copy">
             <h2>
-              North Texas weather is hard on roofs. Black&nbsp;Tie Roofing makes
-              the fix straightforward.
+              High-integrity roofing solutions backed by decades of local
+              experience.
             </h2>
             <p>
-              We install, replace, and repair residential and commercial roofs
-              across the Dallas–Fort Worth Metroplex.
-              With more than 28 years of experience, we walk you through product
-              choices, coordinate with your insurance adjuster when storm damage
-              is involved, and leave your property cleaner than we found it.
+              What began as a small, local operation has grown into one of the
+              region&apos;s most trusted roofing teams. We install, replace, and
+              repair residential and commercial roofs across Idaho Falls and
+              Wichita — with integrity, quality, and roofs that last.
             </p>
           </Reveal>
         </div>
@@ -155,9 +147,9 @@ export default function HomePage() {
       <section className="why">
         <div className="wrap">
           <Reveal className="sect-head">
-            <p className="eyebrow">Why Black Tie</p>
+            <p className="eyebrow">Why Wright</p>
             <h2 className="display">
-              White-glove roofing,
+              Reliable solutions,
               <br />
               without the runaround.
             </h2>
@@ -177,7 +169,7 @@ export default function HomePage() {
       <section className="services" id="services">
         <div className="wrap">
           <Reveal className="sect-head">
-            <p className="eyebrow">Services</p>
+            <p className="eyebrow">Our roofing services</p>
             <h2 className="display">
               Homes and businesses.
               <br />
@@ -193,7 +185,7 @@ export default function HomePage() {
                     alt={svc.alt}
                     fill
                     sizes={
-                      svc.key === "storm"
+                      svc.key === "repairs"
                         ? "100vw"
                         : "(max-width: 820px) 100vw, 50vw"
                     }
@@ -209,7 +201,7 @@ export default function HomePage() {
           </div>
           <Reveal className="svc-ctas">
             <Link className="btn on-dark solid" href="#contact">
-              See residential services
+              Get a free roof inspection
             </Link>
             <Link className="btn on-dark ghost" href="/commercial">
               See commercial services
@@ -241,7 +233,7 @@ export default function HomePage() {
       <section className="closing" id="contact">
         <div className="bg">
           <Image
-            src="https://images.unsplash.com/photo-1605450099279-533bd3ce379a?auto=format&fit=crop&w=2200&q=80"
+            src="/wright/closing.jpg"
             alt=""
             fill
             sizes="100vw"
@@ -252,12 +244,12 @@ export default function HomePage() {
           <Bowtie />
           <h2 className="display">Ready when you are.</h2>
           <p>
-            Schedule a free inspection or call us — we’ll make the next step
-            clear.
+            Schedule a free roof inspection or call us — we&apos;ll make the next
+            step clear.
           </p>
           <div className="hero-ctas">
             <a className="btn on-dark solid" href={site.phoneHref}>
-              Request an inspection
+              Get a free roof inspection
             </a>
             <a className="btn on-dark ghost" href={site.phoneHref}>
               {site.phone}

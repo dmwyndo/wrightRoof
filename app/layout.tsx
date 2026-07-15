@@ -1,31 +1,17 @@
 import type { Metadata } from "next";
-import { Archivo, Geist } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { neulisSans } from "@/lib/fonts";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  variable: "--font-archivo",
-  display: "swap",
-  axes: ["wdth"],
-});
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
-  display: "swap",
-  weight: ["500"],
-});
-
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} | DFW Roofers`,
+    default: `${site.name} | Expert Residential & Commercial Roofing`,
     template: `%s | ${site.name}`,
   },
   description:
-    "Residential and commercial roofing with white-glove service — inspections, storm claims, installs, and cleanup. Free on-site estimate. Call (817) 401-6440.",
+    "Trusted roofing for 60+ years — residential and commercial installations, repairs, inspections, and maintenance. Free roof inspection. Call (208) 522-4474.",
 };
 
 export default function RootLayout({
@@ -34,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${archivo.variable} ${geist.variable}`}>
+    <html lang="en" className={neulisSans.variable}>
       <body>
         <Header />
         {children}

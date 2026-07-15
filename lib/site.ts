@@ -1,55 +1,28 @@
 export const site = {
-  name: "Black Tie Roofing",
-  phone: "(817) 401-6440",
-  phoneHref: "tel:8174016440",
-  email: "info@blacktieroofs.com",
-  areas: "Dallas–Fort Worth",
-  locations: "Fort Worth",
-  tagline: "Roofing done right.",
+  name: "Wright Roofing",
+  phone: "(208) 522-4474",
+  phoneHref: "tel:2085224474",
+  email: "office@wrightroofinginc.com",
+  areas: "Idaho Falls · Wichita",
+  locations: "Idaho Falls · Wichita",
+  tagline: "One call gets it Wright.",
   trustCopy:
     "From quick repairs to full replacements, we deliver honest pricing, quality workmanship, and roofs that last.",
-  googlePlaceId: "ChIJ94qzaVDfTYYRfJy5nzsroqo",
-  googlePlaceQuery:
-    "Black Tie Roofing and Construction, 1309 Twisting Meadows Dr, Haslet, TX",
+  googlePlaceId: "",
+  googlePlaceQuery: "Wright Roofing Inc, 2843 25th E, Idaho Falls, ID 83401",
   links: {
-    facebook:
-      "https://www.facebook.com/Black-Tie-Roofing-and-Construction-2402018770034705/",
+    facebook: "https://facebook.com/wrightroofinginc",
+    instagram: "https://instagram.com/wrightroofinginc",
+    linkedin: "https://linkedin.com/wrightroofinginc",
     google:
-      "https://www.google.com/maps/place/Black+Tie+Roofing+and+Construction/@32.9345971,-97.3871689,15z/data=!4m5!3m4!1s0x0:0xaaa22b3b9fb99c7c!8m2!3d32.9345971!4d-97.3871689",
-    loc8nearme:
-      "https://www.loc8nearme.com/texas/haslet/black-tie-roofing-and-construction/6609463/",
+      "https://www.google.com/maps/search/?api=1&query=Wright+Roofing+Inc+2843+25th+E+Idaho+Falls+ID+83401",
   },
-  trustBadges: [
-    {
-      key: "loc8nearme",
-      label: "Loc8NearMe Recommends Black Tie Roofing and Construction",
-      href: "https://www.loc8nearme.com/texas/haslet/black-tie-roofing-and-construction/6609463/",
-    },
-    {
-      label: "Certificate of Excellence by Loc8NearMe",
-      href: "https://www.loc8nearme.com/texas/haslet/black-tie-roofing-and-construction/6609463/",
-      src: "/trust/certificate-excellence.jpg",
-      width: 300,
-      height: 424,
-    },
-    {
-      label: "Best of Fort Worth 2024 — Fort Worth Magazine",
-      src: "/trust/best-of-fort-worth-2024.png",
-      width: 200,
-      height: 200,
-    },
-    {
-      label: "BBB Accredited Business",
-      src: "/trust/bbb-accredited.jpg",
-      width: 185,
-      height: 300,
-    },
-  ],
+  trustBadges: [] as const,
   trustPoints: [
-    "12+ years of experience",
-    "Licensed & insured",
-    "Insurance claim support",
-    "Workmanship warranty",
-    "Serving DFW",
+    "60+ years of local trust",
+    "Licensed, insured & bonded",
+    "Warranties up to 25 years",
+    "No-pressure estimates",
+    "Responsive crews",
   ],
 } as const;
