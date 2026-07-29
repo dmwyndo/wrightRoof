@@ -31,7 +31,7 @@ const services = [
     tag: "Residential",
     title: "Residential projects",
     body: "From shingle replacements to complete roof installations, we provide expert craftsmanship, honest pricing, and roofing solutions that last for decades.",
-    image: "/wright/residential.jpg",
+    image: "/wright/services-residential.jpg",
     alt: "Completed residential roofing project by Wright Roofing",
   },
   {
@@ -39,7 +39,7 @@ const services = [
     tag: "Commercial",
     title: "Commercial work",
     body: "Performance, durability, and code compliance for offices, retail, warehouses, and property managers — from small buildings to large commercial sites.",
-    image: "/wright/commercial.jpg",
+    image: "/wright/services-commercial.jpg",
     alt: "Commercial flat roof installation by Wright Roofing",
   },
   {
@@ -47,7 +47,7 @@ const services = [
     tag: "Repairs & maintenance",
     title: "Repairs & maintenance",
     body: "Whether it’s a small leak or major damage, our expert team quickly diagnoses and fixes the problem — saving you stress, time, and money.",
-    image: "/wright/repairs.jpg",
+    image: "/wright/services-repairs.jpg",
     alt: "Roof repair and maintenance work by Wright Roofing",
   },
 ] as const;
