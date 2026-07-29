@@ -25,4 +25,6 @@ export const site = {
     "No-pressure estimates",
     "Responsive crews",
   ],
+  heroVideoEmbedUrl:
+    "https://iframe.mediadelivery.net/embed/716271/5be4a09e-a250-4a4e-9fba-cc70d428d212?autoplay=true&loop=true&muted=true&preload=true&playsinline=true",
 } as const;

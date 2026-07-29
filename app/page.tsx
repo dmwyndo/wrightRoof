@@ -80,17 +80,14 @@ export default function HomePage() {
     <main id="top">
       <section className="hero">
         <div className="hero-img" aria-hidden>
-          <video
+          <iframe
             className="hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            poster="/wright/hero.jpg"
-          >
-            <source src="/WRIGHTHERO.mp4" type="video/mp4" />
-          </video>
+            src={site.heroVideoEmbedUrl}
+            title=""
+            loading="eager"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+            tabIndex={-1}
+          />
         </div>
         <p className="hero-brandline">
           Trusted roofing · 60+ years strong
