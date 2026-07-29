@@ -79,11 +79,19 @@ export default function HomePage() {
   return (
     <main id="top">
       <section className="hero">
-        <div
-          className="hero-img"
-          role="img"
-          aria-label="Wright Roofing professional installing a standing seam metal roof"
-        />
+        <div className="hero-img" aria-hidden>
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/wright/hero.jpg"
+          >
+            <source src="/WRIGHTHERO.mp4" type="video/mp4" />
+          </video>
+        </div>
         <p className="hero-brandline">
           Trusted roofing · 60+ years strong
         </p>
