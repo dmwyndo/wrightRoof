@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Logo } from "@/components/Logo";
+import { Logo, LogoMark } from "@/components/Logo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/lib/site";
 
@@ -20,7 +20,11 @@ export function Header() {
     <header className={scrolled ? "scrolled" : undefined}>
       <div className="wrap nav">
         <Link className="brand" href="/" aria-label={`${site.name} — Home`}>
-          <Logo variant={scrolled ? "light" : "dark"} />
+          <Logo
+            className="brand-logo brand-logo--full"
+            variant={scrolled ? "light" : "dark"}
+          />
+          <LogoMark className="brand-logo brand-logo--mark" />
         </Link>
         <nav className="nav-links" aria-label="Primary">
           <Link href="/commercial">Commercial</Link>

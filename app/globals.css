@@ -224,6 +224,11 @@ body > header.scrolled .nav .phone {
   overflow: visible;
 }
 
+.brand-logo--mark {
+  display: none;
+  color: var(--accent);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -542,6 +547,15 @@ body > header.scrolled .nav .phone {
 
   .brand-logo {
     height: 24px;
+  }
+
+  .nav .brand-logo--full {
+    display: none;
+  }
+
+  .nav .brand-logo--mark {
+    display: block;
+    height: 30px;
   }
 
   .nav-social .social-link {
@@ -903,6 +917,12 @@ section {
 
   .trust-headline-mobile {
     display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .trust-headline .trust-headline-line {
+    white-space: normal;
   }
 }
 
