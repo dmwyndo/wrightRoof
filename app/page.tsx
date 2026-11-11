@@ -94,7 +94,6 @@ export default function HomePage() {
         </p>
         <div className="wrap hero-inner">
           <div className="hero-top">
-            <p className="eyebrow">{site.areas}</p>
             <h1 className="display">
               <span className="hero-title-line">One call gets</span>{" "}
               <br className="hero-title-break" aria-hidden />
@@ -140,8 +139,8 @@ export default function HomePage() {
             <p>
               What began as a small, local operation has grown into one of the
               region&apos;s most trusted roofing teams. We install, replace, and
-              repair residential and commercial roofs across Idaho Falls and
-              Wichita — with integrity, quality, and roofs that last.
+              repair residential and commercial roofs — with integrity, quality,
+              and roofs that last.
             </p>
           </Reveal>
         </div>

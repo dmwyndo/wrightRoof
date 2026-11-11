@@ -54,13 +54,13 @@ const FALLBACK_REVIEWS: GoogleReview[] = [
     text: "Wright Roofing handled our commercial flat roof maintenance on schedule and kept us informed throughout the project.",
   },
   {
-    authorName: "Idaho Falls Resident",
+    authorName: "Resident",
     profilePhotoUrl: null,
     rating: 5,
     text: "They didn't try to sell us anything we didn't need. Clear communication from the first call through final inspection.",
   },
   {
-    authorName: "Wichita Business Owner",
+    authorName: "Business Owner",
     profilePhotoUrl: null,
     rating: 5,
     text: "Professional team, quality materials, and minimal disruption to our daily operations. Would hire again without hesitation.",

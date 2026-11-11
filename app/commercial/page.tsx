@@ -32,7 +32,6 @@ export default function CommercialPage() {
           />
         </div>
         <div className="wrap page-hero-inner">
-          <p className="eyebrow page-hero-eyebrow">Idaho Falls · Wichita</p>
           <h1 className="display page-hero-title">Commercial Work</h1>
         </div>
       </section>
@@ -46,8 +45,8 @@ export default function CommercialPage() {
               large warehouses.
             </h2>
             <p>
-              Based in Idaho Falls and Wichita, Wright Roofing handles every kind
-              of commercial roofing need for businesses and property managers.
+              Wright Roofing handles every kind of commercial roofing need for
+              businesses and property managers.
             </p>
           </Reveal>
 

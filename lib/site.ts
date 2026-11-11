@@ -3,13 +3,10 @@ export const site = {
   phone: "(208) 522-4474",
   phoneHref: "tel:2085224474",
   email: "office@wrightroofinginc.com",
-  areas: "Idaho Falls · Wichita",
-  locations: "Idaho Falls · Wichita",
   tagline: "One call gets it Wright.",
   trustCopy:
     "From quick repairs to full replacements, we deliver honest pricing, quality workmanship, and roofs that last.",
   googlePlaceId: "",
-  googlePlaceQuery: "Wright Roofing Inc, 2843 25th E, Idaho Falls, ID 83401",
   links: {
     facebook: "https://facebook.com/wrightroofinginc",
     instagram: "https://instagram.com/wrightroofinginc",

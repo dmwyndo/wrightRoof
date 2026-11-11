@@ -19,8 +19,6 @@ export function Footer() {
             <SocialLinks className="foot-social" />
           </div>
           <div className="foot-meta">
-            {site.locations}
-            <br />
             <a href={site.phoneHref}>{site.phone}</a>
           </div>
           <div className="foot-meta">
